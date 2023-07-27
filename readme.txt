@@ -20,5 +20,11 @@ bot verilen değer kadar kanaldaki mesajları siler.
 bot istenilen şehirdeki hava durumunu yazar.
 !taş_kağıt_makas <seçenek>
 bot taş kağıt makas oynar.
+!unban @
+bot etiketlenen kişinin yasağını kaldırır.
+!mute @
+bot etiketlenen kişiyi susturur.
+!unmute @
+bot etiketlenen kişinin susturmasını kaldırır.
 !saka
 bot rastgele şaka yapar.
