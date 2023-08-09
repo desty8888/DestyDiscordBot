@@ -138,7 +138,7 @@ async def sil(ctx, amount: int):
 @bot.command()
 async def hava(ctx, *, city: str):
     try:
-        API_KEY = "77ad1b337a14b14bd9bf1ffaa259d157"  # OpenWeatherMap API anahtarını buraya ekleyin
+        API_KEY = "77ad1b337a14b14bd9bf1ffaa259d157"  
 
         url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
         response = requests.get(url)
@@ -296,5 +296,14 @@ async def stop(ctx):
     else:
         await ctx.send("Müzik çalmıyor.")
 
+@bot.command()
+async def meme_at(ctx):
+    liste = os.listdir("memes")
+    rastgele_meme = random.choice(liste)
+    tam_uzanti = "memes/" + rastgele_meme
+    f = open(tam_uzanti, "rb")
+    meme = discord.File(f)
+    await ctx.send(file=meme)        
 
-bot.run("TOKEN")
+
+bot.run("MTEzMTI2Mzk1OTcxMDgzODg5NQ.GIugTM.nwFrGvsVV5pxi7rKlMenXHc_FBFakmJvtgO4JI")
