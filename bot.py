@@ -306,4 +306,4 @@ async def meme_at(ctx):
     await ctx.send(file=meme)        
 
 
-bot.run("MTEzMTI2Mzk1OTcxMDgzODg5NQ.GIugTM.nwFrGvsVV5pxi7rKlMenXHc_FBFakmJvtgO4JI")
+bot.run("TOKEN")
